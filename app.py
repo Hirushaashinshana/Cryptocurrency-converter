@@ -14,6 +14,7 @@ def convert ():
 
     response = requests.request("GET", url, headers=headers, params=querystring)
 
-    print(response.json)
+    json = response.json()
+    print(json)
 
 convert()
